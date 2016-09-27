@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace _10_Collections
 {
@@ -27,9 +29,10 @@ namespace _10_Collections
             assets.Add(asset);
         }
 
-        public List<Asset> GetAssets()
+        public IList<Asset> GetAssets()
         {
-            return assets;
+            ReadOnlyCollection<Asset> facade = new ReadOnlyCollection<Asset>(assets);
+            return facade;
         }
 
         public Asset GetAssetByName(String name)

@@ -24,6 +24,14 @@ namespace _10_Collections
             return stocks[id];
         }
 
+        public Dictionary<long, Stock> FindAllStocks()
+        {
+            return stocks;
+        }
 
+        public void Clear()
+        {
+            stocks.Clear();
+        }
     }
 }

@@ -11,5 +11,7 @@ namespace _10_Collections
         long  NextId();
         void  SaveStock(Stock stock);
         Stock LoadStock(long id);
+        Dictionary<long, Stock> FindAllStocks();
+        void Clear();
     }
 }

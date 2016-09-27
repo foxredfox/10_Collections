@@ -58,7 +58,7 @@ namespace _10_Collections
             Stock loaded = repository.LoadStock(yhoo.Id);
             Assert.AreEqual(120, loaded.NumShares);
         }
-/*
+
         [TestMethod]
         public void CanFindAllStocks()
         {
@@ -88,7 +88,7 @@ namespace _10_Collections
             Assert.AreEqual(0, stocks.Count);
         }
 
-    */    
+       
     }
     
 }

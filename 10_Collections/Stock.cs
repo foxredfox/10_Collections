@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _10_Collections
 {
-    class Stock : Asset
+    public class Stock : Asset
     {
         public String Symbol{ get; set; }
         public double PricePerShare{ get; set; }
@@ -19,6 +19,11 @@ namespace _10_Collections
             this.Symbol        = Symbol;
             this.PricePerShare = PricePerShare;
             this.NumShares     = NumShares;
+        }
+
+        public String GetName()
+        {
+            return Symbol;
         }
 
         public double GetValue()

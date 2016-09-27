@@ -29,12 +29,24 @@ namespace _10_Collections
 
         public List<Asset> GetAssets()
         {
-
+            return assets;
         }
 
-        public Asset GetAssetByName()
+        public Asset GetAssetByName(String name)
         {
+            return assets.Find(asset => asset.GetName() == name);
+        }
 
+        public List<Asset> GetAssetsSortedByName()
+        {
+            assets.Sort(new StockNameComparator());
+            return assets;
+        }
+
+        public List<Asset> GetAssetsSortedByValue()
+        {
+            assets.Sort(new StockValueComparator());
+            return assets;
         }
 
     }

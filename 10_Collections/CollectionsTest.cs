@@ -27,7 +27,7 @@ namespace _10_Collections
             Assert.IsTrue(assets.Contains(stockHP));
             Assert.IsTrue(assets.Contains(stockYHOO));
         }
-/*
+
         [TestMethod]
         public void CanGetAssetByName()
         {
@@ -51,6 +51,7 @@ namespace _10_Collections
             Assert.AreEqual(0, comparator.Compare(stockIBM, stockIBM));
             Assert.IsTrue(comparator.Compare(stockIBM, stockYHOO) < 0);
         }
+        
 
         [TestMethod]
         public void CanSortByName()
@@ -65,12 +66,12 @@ namespace _10_Collections
             Assert.IsTrue(stockIBM.Equals(assets[1]));
             Assert.IsTrue(stockYHOO.Equals(assets[2]));
         }
-*/
+
         //    /**
         //* the ValueComparator sorts in *descending* order of value
         //* (most valuable comes first)
         //*/
-/*
+
         [TestMethod]
         public void CanCompareByValue()
         {
@@ -106,6 +107,6 @@ namespace _10_Collections
             IList<Asset> assets = portfolio.GetAssets();
             assets.Add(stockYHOO);
         }
-*/
+
     }
 }

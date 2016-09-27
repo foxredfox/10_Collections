@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace _10_Collections
 {
-    public interface Asset
+    class MemoryStockRepository
     {
-        double GetValue();
-        String GetName();
     }
 }

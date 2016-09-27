@@ -10,8 +10,8 @@ namespace _10_Collections
     {
         public String Symbol{ get; set; }
         public double PricePerShare{ get; set; }
-        public int NumShares{ get; set; }
-        public int Id {get; set;}
+        public int    NumShares{ get; set; }
+        public long   Id {get; set;}
 
         public Stock(){}
         public Stock(String Symbol, double PricePerShare, int NumShares)

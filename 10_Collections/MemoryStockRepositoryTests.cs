@@ -11,7 +11,7 @@ namespace _10_Collections
     //The repository will later serve as a medium between our program and the database. This is called the repository pattern.
     //The tests automatically force you to create an interface which can be used in the next assignment
 
-        /*
+        
     [TestClass]
     public class MemoryStockRepositoryTests
     {
@@ -58,7 +58,7 @@ namespace _10_Collections
             Stock loaded = repository.LoadStock(yhoo.Id);
             Assert.AreEqual(120, loaded.NumShares);
         }
-
+/*
         [TestMethod]
         public void CanFindAllStocks()
         {
@@ -88,7 +88,7 @@ namespace _10_Collections
             Assert.AreEqual(0, stocks.Count);
         }
 
-        
+    */    
     }
-    */
+    
 }
